@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    int length, width;
+
+public:
+    Rectangle() {  // Default constructor
+        length = 1;
+        width = 1;
+    }
+
+    int area() {
+        return length * width;
+    }
+};
+
+int main() {
+    Rectangle rect;
+    cout << "Area of rectangle: " << rect.area() << endl;
+    return 0;
+}
